@@ -1,13 +1,49 @@
-# Sample Hardhat Project
+# ainft-factory-program-contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Template code for AINFT contracts.
 
-Try running some of the following tasks:
+Expected node version is >= 16.0.0.
+
+Make a copy of the `.env.example` and rename it `.env`. Fill out the keys in the file.
+
+## Install dependencies
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+$ yarn
+```
+
+## Compile Solidity
+
+```shell
+$ yarn compile
+```
+
+## Lint Solidity
+
+```shell
+$ yarn lint:sol
+```
+
+## Apply prettier
+
+```shell
+$ yarn prettier
+```
+
+## Run tests
+
+```shell
+$ yarn test
+```
+
+## Run deploy script
+
+```shell
+$ yarn deploy:goerli
+```
+
+## Run mint script
+
+```shell
+$ yarn mint:goerli
 ```
