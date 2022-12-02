@@ -19,6 +19,7 @@ async function main() {
   await myAINFT.deployed();
 
   console.log(`MyAINFT deployed to ${myAINFT.address} !`);
+  console.log(`Check out the deployed contract at https://goerli.etherscan.io/address/${myAINFT.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
