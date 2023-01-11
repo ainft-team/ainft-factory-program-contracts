@@ -10,13 +10,11 @@ async function main() {
 
   const MyAINFT = await ethers.getContractFactory('MyAINFT');
   const myAINFT = await MyAINFT.deploy(
-    'My Test AINFTs', // name
-    'MTA', // symbol
-    'https://us-central1-nft-server-dev.cloudfunctions.net/ainftTestMetadata/', // baseURI
+    'Bready Cat', // name
+    'BCA', // symbol
+    'https://develop-bready-cat-ainft-server-laeyoung.endpoint.dev.ainize.ai/metadata/', // baseURI
     ethers.constants.MaxUint256, // maxTokenId
   );
-
-  await myAINFT.deployed();
 
   console.log(`MyAINFT deployed to ${myAINFT.address} !`);
   console.log(`Check out the deployed contract at https://goerli.etherscan.io/address/${myAINFT.address}`);

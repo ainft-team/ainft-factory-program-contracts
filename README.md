@@ -38,12 +38,24 @@ $ yarn test
 
 ## Run deploy script
 
+for Testnet (goerli)
 ```shell
 $ yarn deploy:goerli
 ```
 
+for Mainnet (mainnet)
+```shell
+$ yarn deploy:mainnet
+```
+
 ## Run mint script
 
+for Testnet (goerli)
 ```shell
 $ yarn mint:goerli
+```
+
+for Mainnet (mainnet)
+```shell
+$ yarn mint:mainnet
 ```
